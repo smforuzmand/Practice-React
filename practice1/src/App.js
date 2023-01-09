@@ -1,10 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import AddUser from './componenets/Users/AddUser';
+
+
+
+
 
 function App() {
   return (
     <div >
-
+      <AddUser />
 
     </div>
   );
