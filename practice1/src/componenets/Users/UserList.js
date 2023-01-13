@@ -9,6 +9,9 @@ const UserList = (props) => {
 
             {props.users.map((user) => {
 
+                <li> {user.name} {user.age}</li>
+
+
             })}
 
 
