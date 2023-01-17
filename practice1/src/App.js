@@ -9,9 +9,15 @@ import UserList from './componenets/Users/UserList';
 
 function App() {
   const [UserList, setUserList] = useState([])
+  const addUserHandler = (uName, uAge) => {
+    setUserList((prevUsersList) => { })
+    return [...prevUsersList, { name: uName, age: uAge }]
+  }
+
+
   return (
     <div >
-      <AddUser />
+      <AddUser onAddUser={addUserHandler} />
       <UserList users={UserList} />
     </div>
   );
