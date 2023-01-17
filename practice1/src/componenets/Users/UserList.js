@@ -12,14 +12,14 @@ const UserList = (props) => {
 
                 {props.users.map((user) => {
 
-                    <li> {user.name} ({user.age} Years old)</li>
+                    <li key={user.id}> {user.name} ({user.age} Years old)</li>
 
 
                 })}
 
 
             </ul>
-        </Card>
+        </Card >
     );
 };
 
