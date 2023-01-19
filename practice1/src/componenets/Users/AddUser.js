@@ -3,7 +3,7 @@ import Button from '../UI/Button';
 import Card from '../UI/Card'
 import ErrorModel from '../UI/ErrorModel';
 import Classes from './AddUser.module.css'
-
+import Wrapper from '../Helpers/Wrapper';
 
 const AddUser = (props) => {
 
@@ -51,7 +51,7 @@ const AddUser = (props) => {
 
     return (
 
-        <>
+        <Wrapper>
             {error && (<ErrorModel title={error.title} messsage={error.message} onConfirm={errorHandler} />)}
 
 
@@ -66,7 +66,7 @@ const AddUser = (props) => {
                 </form>
 
             </Card>
-        </>
+        </Wrapper>
     );
 };
 
