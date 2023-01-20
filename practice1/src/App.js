@@ -16,10 +16,11 @@ function App() {
 
 
   return (
-    <div >
+    //this is a way that we can use it instead of div wrapper or previous wrapper we were using
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UserList users={UserList} />
-    </div>
+    </>
   );
 }
 

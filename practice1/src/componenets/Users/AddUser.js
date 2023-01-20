@@ -70,4 +70,4 @@ const AddUser = (props) => {
     );
 };
 
-export default AddUser;
+export default AddUser; 
