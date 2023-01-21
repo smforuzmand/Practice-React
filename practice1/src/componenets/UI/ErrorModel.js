@@ -4,34 +4,46 @@ import Button from './Button'
 import classes from './ErrorModal.module.css'
 
 
+const Backdrop = (props) => {
+    return
+
+    <div className={classes.backdrop} onclick={props.onConfirm} />
+
+}
+
+
+const ModelOverlay = props => {
+    <Card className={classes.modal}>
+        <header className={classes.header}>
+            <h2>
+                {props.title}
+            </h2>
+        </header>
+        <div className={classes.content}>
+            <p>
+                {props.message}
+
+            </p>
+
+
+
+        </div>
+
+        <footer className={classes.actions}>
+            <Button onClick={props.onConfirm}>
+                Okay
+            </Button>
+        </footer>
+
+    </Card>
+
+}
+
 const ErrorModel = (props) => {
     return (
-        <div>
-            <div className={classes.backdrop} onclick={props.onConfirm} />
-            <Card className={classes.modal}>
-                <header className={classes.header}>
-                    <h2>
-                        {props.title}
-                    </h2>
-                </header>
-                <div className={classes.content}>
-                    <p>
-                        {props.message}
+        <React.Fragment>
 
-                    </p>
-
-
-
-                </div>
-
-                <footer className={classes.actions}>
-                    <Button onClick={props.onConfirm}>
-                        Okay
-                    </Button>
-                </footer>
-
-            </Card>
-        </div>
+        </React.Fragment>
     );
 };
 
