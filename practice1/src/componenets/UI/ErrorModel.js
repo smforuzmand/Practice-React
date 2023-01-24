@@ -49,8 +49,6 @@ const ErrorModel = (props) => {
                 ,
                 document.getElementById('overlay-root')
 
-
-
             )}
 
         </React.Fragment>
@@ -58,3 +56,7 @@ const ErrorModel = (props) => {
 };
 
 export default ErrorModel;
+
+
+
+/* This code defines a React component called "ErrorModel" that renders a backdrop and a modal overlay. The backdrop is rendered using the "Backdrop" component, which takes a single prop "onConfirm" and renders a div element with the class "backdrop" that has an onClick event that calls the "onConfirm" function passed as a prop. The modal overlay is rendered using the "ModelOverlay" component, which takes several props such as "title", "message", and "onConfirm". The "ErrorModel" component uses ReactDOM.createPortal to render the "Backdrop" and "ModelOverlay" components inside the elements with the id "backdrop-root" and "overlay-root" respectively. The "onConfirm" prop passed to both components is used to handle the click event on the "Okay" button. */
