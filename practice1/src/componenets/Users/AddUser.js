@@ -7,8 +7,8 @@ import Wrapper from '../Helpers/Wrapper';
 
 const AddUser = (props) => {
 
-    const [enteredUsername, setEnteredUsername] = useState('')
-    const [enteredAge, setEnteredAge] = useState('')
+    const [enteredUsername, setEnteredUsername] = useState('');
+    const [enteredAge, setEnteredAge] = useState('');
     const [error, setError] = useState('')
 
     const nameInputRef = useRef()
@@ -58,7 +58,7 @@ const AddUser = (props) => {
     }
 
     return (
-
+        //The requirenment is just to have a root element
         <Wrapper>
             {error && (<ErrorModel title={error.title} messsage={error.message} onConfirm={errorHandler} />)}
 
