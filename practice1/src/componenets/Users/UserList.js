@@ -19,6 +19,8 @@ const UserList = (props) => {
 
 
             </ul>
+            <Button onClick={props.event} type="submit"></Button>
+
         </Card >
     );
 };
